@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AmountBreakDown">
+
+    <!-- Add dynamically generated EditText fields here -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/amountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!-- Calculate button -->
+
+    <Button
+        android:id="@+id/btnCalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/calculate" />
+
+    <TableLayout
+        android:id="@+id/amountResultTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:shrinkColumns="0,1,2">
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnShareAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Share"
+        android:visibility="gone" />
+
+</LinearLayout>

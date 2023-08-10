@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="669dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="222dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/please_input_your"
+                android:textAlignment="textStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_bill_amount"
+                    android:textAlignment="gravity" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/amount_30_00"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#8D6E63" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/number_of_people" />
+
+                <EditText
+                    android:id="@+id/pax"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/number_2_and_above"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColorHint="#8D6E63" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEqual"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/equally" />
+
+            <Button
+                android:id="@+id/btnPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/percentage" />
+
+            <Button
+                android:id="@+id/btnRatio"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ratio" />
+
+            <Button
+                android:id="@+id/btnAmount"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/custom_amount" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

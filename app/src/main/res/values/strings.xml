@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BillBreakDown</string>
+    <string name="calculate">Calculate</string>
+    <string name="please_input_your">Please Input Your</string>
+    <string name="total_bill_amount">Total Bill Amount</string>
+    <string name="amount_30_00">Amount (30.00)</string>
+    <string name="number_of_people">Number of People</string>
+    <string name="number_2_and_above">Number (2 and above)</string>
+    <string name="equally">Equally</string>
+    <string name="percentage">Percentage %</string>
+    <string name="ratio">Ratio</string>
+    <string name="custom_amount">Custom Amount</string>
+</resources>
